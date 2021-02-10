@@ -2,11 +2,16 @@
 
 <p align="center">Extension to make programming easy, with snippets, and templates</p>
 
-![Example](.media/Example.gif)
+![Example](https://raw.githubusercontent.com/ReddyyZ/EasierProgramming/master/.media/Example.gif?token=AJ4QVTMJX7OPTFVKOHHCGPDAFUKZU)
 
 ## Avaliable templates
 - Node.js backend
 - Python Package
+
+## Snippets
+- Javascript
+- Typescript
+- Python
 
 ## License
 This project is under MIT License.

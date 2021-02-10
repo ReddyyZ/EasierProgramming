@@ -1,0 +1,13 @@
+{
+    "TSX React.js Page": {
+        "prefix": "rpts",
+        "body": [
+            "import React from 'react';",
+            "",
+            "const ${1:Home}: React.FC = () => {\n\treturn (\n\t\t<h1>React.js Page Template</h1>\n\t);\n};",
+            "",
+            "export default ${1:Home};"
+        ],
+        "description": "Create Typescript React.js Page Template"
+    }
+}

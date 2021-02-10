@@ -1,8 +1,8 @@
 {
 	"name": "easierprogramming",
 	"displayName": "Easier Programming",
-	"description": "",
-	"version": "0.0.1",
+	"description": "The best extension to make your life easier using VSCode snippets!",
+	"version": "0.0.3",
 	"publisher": "reddyyz",
 	"repository": "https://github.com/ReddyyZ/EasierProgramming",
 	"engines": {
@@ -28,6 +28,20 @@
 			{
 				"command": "easierprogramming.create-python-package",
 				"title": "Create Python Package"
+			}
+		],
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./src/snippets/javascript.json"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./src/snippets/typescript.json"
+			},
+			{
+				"language": "python",
+				"path": "./src/snippets/python.json"
 			}
 		]
 	},

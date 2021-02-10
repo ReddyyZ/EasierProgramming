@@ -1,0 +1,19 @@
+{
+    "Create Python Class": {
+        "prefix": "cc",
+        "body": [
+            "class ${1:MyClass}(${2:object}):",
+            "\tdef __init__(${3:self}):",
+            "\t\t${4:pass}"
+        ],
+        "description": "Create a Python Class"
+    },
+    "Create Python Function": {
+        "prefix": "cpf",
+        "body": [
+            "def ${1:MyFunc}($2):",
+            "\t${3:pass}"
+        ],
+        "description": "Create a Python Function"
+    }
+}

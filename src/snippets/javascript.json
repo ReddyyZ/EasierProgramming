@@ -1,0 +1,25 @@
+{
+    "Node.js Router": {
+        "prefix": "router",
+        "body": [
+            "const express = require('express');",
+            "const routes = express.Router();",
+            "",
+            "routes.get('/', (req,res) => {return res.json({success: true})})",
+            "",
+            "module.exports = routes;"
+        ],
+        "description": "Create Node.js Router Template"
+    },
+    "React.js Page": {
+        "prefix": "rpt",
+        "body": [
+            "import React from 'react';",
+            "",
+            "const ${1:Home} = () => {\n\treturn (\n\t\t<h1>React.js Page Template</h1>\n\t);\n};",
+            "",
+            "export default ${1:Home};"
+        ],
+        "description": "Create React.js Page Template"
+    }
+}
