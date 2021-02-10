@@ -22,12 +22,36 @@ const cors = require("cors");
 const routes = require("./routes");
 
 const app = express();
+const port = 3333;
+
 app.use(express.json());
 app.use(cors());
 app.use(routes);
 
 app.listen(3333, () => {
-    console.log("Server started!\\nListening on 127.0.0.1:3333\\n");
+    console.log(\`\\x1b[33m
+        _nnnn_
+        dGGGGMMb
+       @p~qp~~qMb
+       M|@||@) M|
+       @,----.JM|
+      JS^\\\\__/  qKL
+     dZP        qKRb
+    dZP          qKKb
+   fZP            SMMb
+   HZM            MMMM
+   FqM            MMMM
+ __| ".        |\\\\dS"qML
+ |    \\\`.       | \\\`' Zq
+_)      \\\\.___.,|     .'
+\\\\____   )MMMMMP|   .'
+     \\\`-'       \\\`--'
+Node.js backend template
+Created with "Easier Programming" extension\\x1b[0m
+
+Server started!
+Listening on 127.0.0.1:\${port}
+\`);
 });
 `;
 
@@ -57,7 +81,20 @@ const createFile = (filePath, name, content) => {
 };
 
 const main = () => {
+    const name = String(vscode.workspace.name);
     const folderPath = String(vscode.workspace.workspaceFolders[0].uri.path).substring(1);
+
+    const packageContent = `{
+  "name": "${name}",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  }
+}
+`;
 
     // Create directories
     createDir(folderPath, [
@@ -68,6 +105,26 @@ const main = () => {
 
     createFile(path.join(folderPath, "src/index.js"), "index.js", indexContent);
     createFile(path.join(folderPath, "src/routes.js"), "routes.js", routesContent);
+    createFile(path.join(folderPath, "package.json"), "package.json", packageContent);
+
+    const terminal = vscode.window.createTerminal({
+        name: "Easier Programming - Create Node.js backend template",
+        cwd: folderPath,
+        hideFromUser: false,
+    });
+    terminal.show();
+    terminal.sendText(`cd ${folderPath}`);
+    terminal.sendText("yarn add express cors");
+    terminal.sendText("yarn add nodemon -D");
+    terminal.sendText("yarn dev");
+
+    vscode.window.onDidCloseTerminal(t => {
+        if (t.processId === terminal.processId) {
+            if (t.exitStatus && t.exitStatus.code) { 
+                vscode.window.showInformationMessage(`Exit code: ${t.exitStatus.code}`); 
+            }
+        }
+    });
 
     return vscode.window.showInformationMessage('Node.js backend template created!');
 };
