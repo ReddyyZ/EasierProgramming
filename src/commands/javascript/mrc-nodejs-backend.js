@@ -72,5 +72,5 @@ const main = () => {
     return vscode.window.showInformationMessage('Node.js backend template created!');
 };
 
-const nodejs_backend = vscode.commands.registerCommand('redextension.mrc-nodejs-backend', main);
+const nodejs_backend = vscode.commands.registerCommand('easierprogramming.mrc-nodejs-backend', main);
 module.exports = nodejs_backend;

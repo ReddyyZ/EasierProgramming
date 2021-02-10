@@ -1,8 +1,8 @@
 // The module 'vscode' contains the VS Code extensibility API
 // Import the module and reference it with the alias vscode in your code below
 const vscode = require('vscode');
-const python_package = require('./commands/create-python-package');
-const nodejs_backend = require('./commands/mrc-nodejs-backend');
+const python_package = require('./commands/python/create-python-package');
+const nodejs_backend = require('./commands/javascript/mrc-nodejs-backend');
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed

@@ -127,5 +127,5 @@ setuptools.setup(
     return vscode.window.showInformationMessage('Python Package template created!');
 };
 
-const python_package = vscode.commands.registerCommand('redextension.create-python-package', main);
+const python_package = vscode.commands.registerCommand('easierprogramming.create-python-package', main);
 module.exports = python_package;

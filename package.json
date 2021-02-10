@@ -1,6 +1,6 @@
 {
-	"name": "redextension",
-	"displayName": "RedExtension",
+	"name": "easierprogramming",
+	"displayName": "Easier Programming",
 	"description": "",
 	"version": "0.0.1",
 	"publisher": "reddyyz",
@@ -17,15 +17,15 @@
 	"contributes": {
 		"commands": [
 			{
-				"command": "redextension.helloWorld",
+				"command": "easierprogramming.helloWorld",
 				"title": "Hello World"
 			},
 			{
-				"command": "redextension.mrc-nodejs-backend",
+				"command": "easierprogramming.mrc-nodejs-backend",
 				"title": "Create Nodejs Backend"
 			},
 			{
-				"command": "redextension.create-python-package",
+				"command": "easierprogramming.create-python-package",
 				"title": "Create Python Package"
 			}
 		]
