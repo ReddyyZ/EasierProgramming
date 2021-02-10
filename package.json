@@ -4,6 +4,7 @@
 	"description": "",
 	"version": "0.0.1",
 	"publisher": "reddyyz",
+	"repository": "https://github.com/ReddyyZ/EasierProgramming",
 	"engines": {
 		"vscode": "^1.53.0"
 	},
