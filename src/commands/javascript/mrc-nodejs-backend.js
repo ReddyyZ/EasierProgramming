@@ -14,6 +14,8 @@ const UserController = require('./controllers/UserController');
 routes.get('/users/:username',UserController.show);
 */
 
+routes.get('/', () => {return res.json({success: true})}));
+
 module.exports = routes;
 `;
 
