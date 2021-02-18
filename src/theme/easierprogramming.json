@@ -2,6 +2,7 @@
     "$schema": "vscode://schemas/color-theme",
     "name": "EasierProgramming Theme",
     "colors": {
+        //Editor
         "editor.background": "#222222",
         "editor.foreground": "#d3d3d3",
         "editorLineNumber.foreground": "#606060",
@@ -10,12 +11,17 @@
 		"editorBracketMatch.background": "#530101", // #790000
 		"editorBracketMatch.border": "#530101", // #790000
 		"editor.lineHighlightBackground": "#272727",
-		"focusBorder": "#fafbfc",
+		"focusBorder": "#d3d3d3",
 
         // Sidebar
         "sideBar.background": "#202020",
         "sideBar.foreground": "#d3d3d3",
-        "sideBar.border": "#404040"
+        "sideBar.border": "#404040",
+
+        // Title Bar
+        "titleBar.activeBackground": "#303030",
+        "titleBar.inactiveBackground": "#272727",
+
     },
     "semanticTokenColors": {
         // "function": "#ff0000"
@@ -163,6 +169,12 @@
             ],
             "settings": {
                 "foreground": "#a871ff"
+            }
+        },
+        {
+            "scope": "support.type.property-name",
+            "settings": {
+                "foreground": "#ff5b5b"
             }
         }
     ]

@@ -2,7 +2,7 @@
 	"name": "easierprogramming",
 	"displayName": "Easier Programming",
 	"description": "The best extension to make your life easier using VSCode snippets, templates and themes!",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"publisher": "reddyyz",
 	"repository": "https://github.com/ReddyyZ/EasierProgramming",
 	"engines": {
