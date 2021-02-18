@@ -30,7 +30,7 @@
         {
             "scope": "comment",
             "settings": {
-                "foreground": "#c60000"
+                "foreground": "#94a1af"
             }
         },
 
@@ -94,21 +94,33 @@
             }
         },
         {
-            "scope": "variable.other.readwrite", // Variable as arguments
+            "scope": "variable.parameter", // Variable as arguments
             "settings": {
                 "foreground": "#e02828"
             }
         },
         {
+            "scope": "variable.other.readwrite",
+            "settings": {
+                "foreground": "#c8c8c8"
+            }
+        },
+        {
             "scope": "variable.other.constant",
             "settings": {
-                "foreground": "#ff2f2f"
+                "foreground": "#d3d3d3"
             }
         },
         {
             "scope": "entity.name.variable",
             "settings": {
                 "foreground": "#ff2f2f"
+            }
+        },
+        {
+            "scope": "constant.character",
+            "settings": {
+                "foreground": "#ff5151"
             }
         },
 
@@ -141,6 +153,16 @@
             "scope": "support.type.object.module",
             "settings": {
                 "foreground": "#ff7300"
+            }
+        },
+        {
+            "scope": [
+                "constant.numeric",
+                "constant.language",
+                "variable.language"
+            ],
+            "settings": {
+                "foreground": "#a871ff"
             }
         }
     ]
