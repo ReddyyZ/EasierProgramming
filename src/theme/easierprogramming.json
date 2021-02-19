@@ -53,7 +53,7 @@
                 "entity.name.function"
             ],
             "settings": {
-                "foreground": "#ff2f2f"
+                "foreground": "#d3d3d3"
             }
         },
         {
@@ -75,7 +75,10 @@
             }
         },
         {
-            "scope": "storage.type.function", // function, def
+            "scope": [
+                "storage.type.function",
+                "keyword.function"
+            ], // function, def
             "settings": {
                 "foreground": "#21aee6"
             }
@@ -149,7 +152,10 @@
             "scope": [
                 "keyword.control.directive.include",
                 "keyword.control.import",
-                "keyword.control"
+                "keyword.control",
+                "keyword.import",
+                "keyword.function",
+                "keyword.package"
             ],
             "settings": {
                 "foreground": "#ff2f2f"
