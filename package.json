@@ -10,7 +10,8 @@
 	},
 	"categories": [
 		"Themes",
-		"Snippets"
+		"Snippets",
+		"Other"
 	],
 	"activationEvents": [
 		"*"
